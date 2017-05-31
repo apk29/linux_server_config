@@ -1,0 +1,206 @@
+aMZmCx/ZMfupPLyXta1BdXm7sINqAZcws
+May 23 21:44:41 ubuntu sshd[5984]: pam_unix(sshd:session): session opened for user ubuntu by (ui
+d=0)
+May 23 21:44:41 ubuntu systemd-logind[761]: New session 23 of user ubuntu.
+May 23 21:44:42 ubuntu sshd[6017]: Accepted publickey for ubuntu from 72.21.217.100 port 28195 s
+sh2: RSA-CERT ID 2430832213657926310:G2TZJC9WSUNZnnhCTdM2pA== (serial 0) CA RSA SHA256:/gnrlD5dW
+aaMZmCx/ZMfupPLyXta1BdXm7sINqAZcws
+May 23 21:44:42 ubuntu sshd[6017]: pam_unix(sshd:session): session opened for user ubuntu by (ui
+d=0)
+May 23 21:44:42 ubuntu systemd-logind[761]: New session 24 of user ubuntu.
+May 23 21:51:39 ubuntu sshd[4607]: pam_unix(sshd:session): session closed for user ubuntu
+May 23 21:51:39 ubuntu systemd-logind[761]: Removed session 4.
+May 23 22:10:38 ubuntu sshd[4576]: pam_unix(sshd:session): session closed for user ubuntu
+May 23 22:10:38 ubuntu systemd-logind[761]: Removed session 3.
+May 23 22:17:01 ubuntu CRON[6083]: pam_unix(cron:session): session opened for user root by (uid=
+0)
+May 23 22:17:01 ubuntu CRON[6083]: pam_unix(cron:session): session closed for user root
+May 23 22:17:06 ubuntu sshd[6086]: Accepted publickey for ubuntu from 72.21.217.75 port 26468 ss
+h2: RSA-CERT ID 4671559566837268172:8TC7OzHeuPC44FDxjQQQow== (serial 0) CA RSA SHA256:/gnrlD5dWa
+aMZmCx/ZMfupPLyXta1BdXm7sINqAZcws
+May 23 22:17:06 ubuntu sshd[6086]: pam_unix(sshd:session): session opened for user ubuntu by (ui
+d=0)
+May 23 22:17:06 ubuntu systemd-logind[761]: New session 26 of user ubuntu.
+May 23 22:17:06 ubuntu sshd[6119]: Accepted publickey for ubuntu from 72.21.217.75 port 1103 ssh
+2: RSA-CERT ID 4671559566837268172:8TC7OzHeuPC44FDxjQQQow== (serial 0) CA RSA SHA256:/gnrlD5dWaa
+MZmCx/ZMfupPLyXta1BdXm7sINqAZcws
+May 23 22:17:06 ubuntu sshd[6119]: pam_unix(sshd:session): session opened for user ubuntu by (ui
+d=0)
+May 23 22:17:06 ubuntu systemd-logind[761]: New session 27 of user ubuntu.
+May 23 22:22:14 ubuntu sshd[4785]: pam_unix(sshd:session): session closed for user ubuntu
+May 23 22:22:14 ubuntu systemd-logind[761]: Removed session 6.
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/python
+$ cd /ubuntu
+bash: cd: /ubuntu: No such file or directory
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/python
+$ cd ..
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming
+$ cd ubuntu
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu
+$ ls
+linuxServer/  student_error.txt  student_error2.txt  Vagrantfile
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu
+$ ls
+linuxServer/  student_error.txt  student_error2.txt  Vagrantfile
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu
+$ cd linuxServer
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/vostro420/.ssh/id_rsa): /c/Users/vostro420/.ssh/linuxserver
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/vostro420/.ssh/linuxserver.
+Your public key has been saved in /c/Users/vostro420/.ssh/linuxserver.pub.
+The key fingerprint is:
+SHA256:rrXBlnuf7jyJmzheqWgIn4YBKU2zkLhrmasYloW1f2w vostro420@Popkorn3
+The key's randomart image is:
++---[RSA 2048]----+
+|..               |
+|+ o              |
+| * +             |
+|= = .            |
+|.+oo    S        |
+|.+= . .o . .     |
+|oo.= + EB o. .   |
+|oo. = +=.Booo.   |
+|+  . .o.*oo=*.   |
++----[SHA256]-----+
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22
+The authenticity of host '54.91.107.101 (54.91.107.101)' can't be established.
+ECDSA key fingerprint is SHA256:Qr/Rlo/k7NHMNMirJc4Bx6rcyzBJDPmbaK4EWCNZN3Y.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '54.91.107.101' (ECDSA) to the list of known hosts.
+Permission denied (publickey).
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22 ~/.ssh/linuxserver
+Permission denied (publickey).
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22 ~/.ssh/linuxserver
+grader@54.91.107.101's password:
+bash: /c/Users/vostro420/.ssh/linuxserver: No such file or directory
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22 ~/.ssh/linuxserver.pub
+grader@54.91.107.101's password:
+bash: /c/Users/vostro420/.ssh/linuxserver.pub: No such file or directory
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22 -i ~/.ssh/linuxserver.pub
+grader@54.91.107.101's password:
+Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-45-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+7 packages can be updated.
+7 updates are security updates.
+
+
+*** System restart required ***
+grader@ip-172-26-9-160:~$ ls
+grader@ip-172-26-9-160:~$ ls -la
+total 24
+drwxr-xr-x 3 grader grader 4096 May 23 20:25 .
+drwxr-xr-x 4 root   root   4096 May 23 19:24 ..
+-rw-r--r-- 1 grader grader  220 May 23 19:24 .bash_logout
+-rw-r--r-- 1 grader grader 3771 May 23 19:24 .bashrc
+drwx------ 2 grader grader 4096 May 23 20:25 .cache
+-rw-r--r-- 1 grader grader  655 May 23 19:24 .profile
+grader@ip-172-26-9-160:~$ mkdir .ssh
+grader@ip-172-26-9-160:~$ touch .ssh/authorized_keys
+grader@ip-172-26-9-160:~$ nano .ssh/authorized_keys
+grader@ip-172-26-9-160:~$ sudo nano /etc/ssh/sshd_config
+grader@ip-172-26-9-160:~$ chmod 700 .ssh
+grader@ip-172-26-9-160:~$ chmod 644 .ssh/authorized_keys
+grader@ip-172-26-9-160:~$ logout
+Connection to 54.91.107.101 closed.
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22 -i ~/.ssh/linuxserver.pub
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+grader@54.91.107.101's password:
+Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-45-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+7 packages can be updated.
+7 updates are security updates.
+
+
+*** System restart required ***
+Last login: Tue May 23 20:30:46 2017 from 67.164.34.80
+grader@ip-172-26-9-160:~$ sudo service ssh restart
+grader@ip-172-26-9-160:~$ exit
+logout
+Connection to 54.91.107.101 closed.
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22 -i ~/.ssh/linuxserver.pub
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Permission denied (publickey).
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22 -i ~/.ssh/linuxserver.pub
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Permission denied (publickey).
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ sudo service ssh restart
+bash: sudo: command not found
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22 -i ~/.ssh/linuxserver.pub
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Permission denied (publickey).
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ls -lh /c/users/vostro420/.ssh/linuxserver.pub
+-rw-r--r-- 1 vostro420 197121 400 May 23 13:04 /c/users/vostro420/.ssh/linuxserver.pub
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh -vvv demo_user@54.91.33.133 -i lightsail_demo_rsa 2> ssh_debug.txt
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh -vvv grader@54.91.33.133 -i lightsail_demo_rsa 2> ssh_debug.txt
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$ ssh grader@54.91.107.101 -p 22 -i ~/.ssh/linuxserver.pub
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Enter passphrase for key '/c/Users/vostro420/.ssh/linuxserver.pub':
+Permission denied (publickey).
+
+vostro420@Popkorn3 MINGW64 /f/Documents/Programming/ubuntu/linuxServer
+$
+TrustedUserCAKeys /etc/ssh/lightsail_instance_ca 
